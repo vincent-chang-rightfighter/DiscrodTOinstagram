@@ -1,0 +1,3 @@
+discord.py==1.7.3
+instagrapi==1.16.16
+Pillow==9.2.0
