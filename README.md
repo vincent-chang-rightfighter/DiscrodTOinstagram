@@ -15,6 +15,28 @@
 
 ## Modify main.py 
 
+### Fist
+
+At same main.py path , 
+Create a new pass.txt and enter the password in the content.
+>在 main.y 相同目錄下
+>新建 pass.txt 並在內容輸入密碼.
+
+### line 17 
+Change your keyword list
+>更改為你的關鍵字
+
+```py
+itemlist = ["share", "builds", "overclock"]
+```
+### line 57
+Change your instagram hash tag
+>更改你的 IG 主題標籤
+
+```py
+hashtag = "-\n#PCSetUp #PCBuilding #PCbuilds"
+```
+
 #### line 63
 
 Replace to instagram account id 
@@ -23,19 +45,17 @@ Replace to instagram account id
 ```py
 insta_client.login("BOT_USE_INSTAGRAM_ACCOUNT_ID",open('pass.txt', 'r').read())
 ```
-At same path , 
-Create a new pass.txt and enter the password in the content.
->在同個目錄下
->新建 pass.txt 並在內容輸入密碼.
 
 #### line 80
 Change your discord bot token 
 >修改你的 discord bot token
-[How to Get a Discord Bot Token](https://www.writebots.com/discord-bot-token/)
 
 ```py
 bot.run('YOUR Discord bot tokem')
 ```
+
+若不清楚如何建立機器人及取得 token 可參考
+[How to Get a Discord Bot Token](https://www.writebots.com/discord-bot-token/)
 
 ***
 # Important
@@ -43,4 +63,3 @@ bot.run('YOUR Discord bot tokem')
 ### 機器人必須手動限制在一個頻道,其餘頻道不能有訪問權限.
 ## Otherwise it will be triggered.
 ### 否則會被觸發.
-
