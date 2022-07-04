@@ -37,7 +37,29 @@ Change your instagram hash tag
 hashtag = "-\n#PCSetUp #PCBuilding #PCbuilds"
 ```
 
-#### line 63
+### line 59
+ig_caption variable is the text content sent to instagram.
+>ig_caption 變數是發往 instagram 的文字內容.
+
+```py
+ig_caption = str(message.author)+"posted on" + \
+    str(message.channel.name)+"\n" + \
+    f'{message.content}\n\n{hashtag}'
+```
+variable 
+
+str(message.author) is author who send it from discord.
+>str(message.author) 是從 discord 發送它的作者
+
+"posted on" can change to your language.
+
+str(message.channel.name) which channel in discord was sent from.
+>str(message.channel.name) 是從 discord 哪個頻道發送的。
+
+message.content is the message content
+
+
+### line 63
 
 Replace to instagram account id 
 >替換成 IG 頻道帳號
@@ -46,7 +68,7 @@ Replace to instagram account id
 insta_client.login("BOT_USE_INSTAGRAM_ACCOUNT_ID",open('pass.txt', 'r').read())
 ```
 
-#### line 80
+### line 80
 Change your discord bot token 
 >修改你的 discord bot token
 
@@ -59,7 +81,7 @@ bot.run('YOUR Discord bot tokem')
 
 ***
 # Important
-## The robot must be manually restricted to one channel, and the other channels cannot have access privileges.
+### The robot must be manually restricted to one channel, and the other channels cannot have access privileges.
 ### 機器人必須手動限制在一個頻道,其餘頻道不能有訪問權限.
-## Otherwise it will be triggered.
+### Otherwise it will be triggered.
 ### 否則會被觸發.
